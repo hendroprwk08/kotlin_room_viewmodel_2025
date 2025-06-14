@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Kotlin Room</string>
+    <string name="tambah">Tambah</string>
+    <string name="simpan">Simpan</string>
+    <string name="hapus">Hapus</string>
+    <string name="tidak">Tidak</string>
+    <string name="batal">Batal</string>
+    <string name="judul">Judul</string>
+    <string name="penulis">Penulis</string>
+</resources>
