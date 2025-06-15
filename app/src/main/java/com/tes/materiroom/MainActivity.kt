@@ -18,6 +18,7 @@ class MainActivity : AppCompatActivity() {
     // Dapatkan instance aplikasi kustom Anda
     private val applicationContext by lazy { application as MyApplication }
 
+    // delegate viewModels
     private val bukuViewModel: BukuViewModel by viewModels {
         BukuViewModelFactory(applicationContext.repository)
     }

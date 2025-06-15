@@ -4,7 +4,7 @@ import android.app.Application
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.SupervisorJob
 
-class MyApplication : Application() {
+ class MyApplication : Application() {
     // Menggunakan CoroutineScope untuk siklus hidup aplikasi
     val applicationScope = CoroutineScope(SupervisorJob())
 

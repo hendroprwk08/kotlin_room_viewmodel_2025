@@ -5,7 +5,8 @@ import androidx.room.*
 
 @Dao
 interface BukuDao {
-    @Insert
+
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insert(buku: Buku)
 
     @Delete
