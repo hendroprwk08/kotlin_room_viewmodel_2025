@@ -44,11 +44,11 @@ class MainActivity : AppCompatActivity() {
 
             val builder = AlertDialog.Builder(this)
                 .setPositiveButton(R.string.simpan) { dialog, which ->
-                    val judul = inputLayoutBinding.etJudul.text.toString()
-                    val penulis = inputLayoutBinding.etPenulis.text.toString()
+                    val etjudul = inputLayoutBinding.etJudul.text.toString()
+                    val etpenulis = inputLayoutBinding.etPenulis.text.toString()
 
-                    if (judul.isNotBlank() && penulis.isNotBlank()) {
-                        bukuViewModel.insert(Buku(judul = judul, penulis = penulis))
+                    if (etjudul.isNotBlank() && etpenulis.isNotBlank()) {
+                        bukuViewModel.insert(Buku(judul = etjudul, penulis = etpenulis))
                     }
                 }
                 .setNegativeButton(R.string.tidak) { dialog, which -> // Ganti Neutral jadi Negative

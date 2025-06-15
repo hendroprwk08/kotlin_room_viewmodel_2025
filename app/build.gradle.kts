@@ -44,21 +44,11 @@ android {
 dependencies {
     val room_version = "2.6.1"
 
-    // hilt Dependency Injection (DI) yang dibangun di atas Dagger.
-    // menyediakan dependensi seperti database dan repository ke ViewModel
-    implementation ("com.google.dagger:hilt-android:2.51.1")
-    kapt ("com.google.dagger:hilt-android-compiler:2.51.1")
-    kapt ("androidx.hilt:hilt-compiler:1.2.0")
-
-    // (opsional) hilt jika pakai Fragment
-    // implementation ("androidx.hilt:hilt-navigation-fragment:1.2.0")
-
     implementation("androidx.room:room-runtime:$room_version")
     annotationProcessor("androidx.room:room-compiler:$room_version")
     kapt("androidx.room:room-compiler:$room_version")
     implementation("androidx.room:room-ktx:$room_version") //Kotlin Extensions and Coroutines support for Room
     implementation ("androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.0")
-
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
